@@ -93,10 +93,10 @@ warn() {
 }
 
 err() {
-    printf "${STL_BOLD}${CLR_RED}error:${CLR_RESET} ${STL_BOLD}%s${CLR_RESET}\n" "$1"
+    printf "${CLR_RED}${STL_BOLD}error:${CLR_RESET} ${STL_BOLD}%s${CLR_RESET}\n" "$1"
     shift
     for i in "$@"; do
-        printf "     ${STL_BOLD}${CLR_RED}|${CLR_RESET} ${STL_BOLD}%s${CLR_RESET}\n" "$i"
+        printf "     ${CLR_RED}${STL_BOLD}|${CLR_RESET} ${STL_BOLD}%s${CLR_RESET}\n" "$i"
     done
 }
 
